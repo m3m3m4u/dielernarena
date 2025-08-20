@@ -1,0 +1,30 @@
+Kategorie,Name,Preis
+Straßen,Straße,10
+Straßen,Straße,10
+Straßen,Zebrastreifen,15
+Straßen,Zebrastreifen,15
+Straßen,Allee,15
+Straßen,Allee,15
+Straßen,Kreisverkehr,25
+Straßen,Kreuzung,25
+Straßen,Kurve,10
+Straßen,Kurve,10
+Straßen,Kurve,10
+Straßen,Kurve,10
+Wohnhäuser,Kleines Wohnhaus,100
+Wohnhäuser,Familienhaus,200
+Wohnhäuser,Mehrfamilienhaus,350
+Wohnhäuser,Apartmentblock,500
+Wohnhäuser,Villa,800
+Supermarkt,Supermarkt (klein),450
+Supermarkt,Supermarkt (mittel),650
+Supermarkt,Supermarkt (groß),900
+Stadthaus,Stadthaus A,400
+Stadthaus,Stadthaus B,520
+Stadthaus,Stadthaus C,680
+Kiosk,Kiosk,120
+Kiosk,Kiosk (Ecke),150
+Bürogebäude,Bürogebäude (klein),700
+Bürogebäude,Bürogebäude (mittel),950
+Bürogebäude,Bürogebäude (hoch),1250
+Bürogebäude,Bürokomplex,1600
