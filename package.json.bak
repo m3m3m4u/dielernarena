@@ -1,0 +1,49 @@
+{
+  "name": "lernarena",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=18.18.0 <=22"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "cross-env PORT=3001 next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "init:author": "tsx src/scripts/initAuthor.ts",
+    "typecheck": "tsc --noEmit",
+    "analyze": "cross-env ANALYZE=1 next build",
+    "ci": "npm run lint && npm run typecheck && npm run build",
+  "dev:clean": "powershell -NoProfile -Command \"$ErrorActionPreference='SilentlyContinue'; $ports=@(3000,3001); foreach($port in $ports){ $procId=(Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue | Select-Object -First 1 -ExpandProperty OwningProcess); if($procId){ try{ Stop-Process -Id $procId -Force -ErrorAction Stop }catch{} } }; if (Test-Path '.next'){ try{ Remove-Item -Recurse -Force '.next' }catch{} }; if (Test-Path 'node_modules/.cache'){ try{ Remove-Item -Recurse -Force 'node_modules/.cache' }catch{} }; npm run dev\"",
+    "vercel-build": "next build"
+  },
+  "dependencies": {
+    "@vercel/blob": "^0.23.4",
+    "bcryptjs": "^3.0.2",
+    "docx": "^8.5.0",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.3",
+    "mongoose": "^8.17.0",
+    "next": "15.4.6",
+    "next-auth": "^4.24.11",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "cross-env": "^7.0.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.6",
+    "tailwindcss": "^4",
+    "tsx": "^4.19.2",
+    "typescript": "^5"
+  }
+}
