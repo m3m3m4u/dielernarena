@@ -1,9 +1,0 @@
-{
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/api/user/route": "app/api/user/route.js",
-  "/api/arena/isostadt/route": "app/api/arena/isostadt/route.js",
-  "/dashboard/page": "app/dashboard/page.js",
-  "/arena/page": "app/arena/page.js",
-  "/arena/arenaCity/page": "app/arena/arenaCity/page.js",
-  "/arena/isostadt/page": "app/arena/isostadt/page.js"
-}
