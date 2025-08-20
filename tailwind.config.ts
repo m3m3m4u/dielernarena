@@ -1,4 +1,13 @@
-// Minimal Tailwind v4 config (optional, can be empty)
-export default {
-  content: ['./src/**/*.{ts,tsx}', './public/**/*.html'],
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
+  content: [
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    './public/**/*.html',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
 }
+export default config
