@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env PORT=3001 next dev",
-    "build": "next build",
+  "build": "cross-env LIGHTNINGCSS_USE_WASM=1 next build",
     "start": "next start",
     "lint": "next lint",
     "init:author": "tsx src/scripts/initAuthor.ts",
