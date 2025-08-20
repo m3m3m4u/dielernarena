@@ -18,6 +18,7 @@
     "vercel-build": "next build"
   },
   "dependencies": {
+  "lightningcss": "^1.26.0",
     "@vercel/blob": "^0.23.4",
     "bcryptjs": "^3.0.2",
     "docx": "^8.5.0",
